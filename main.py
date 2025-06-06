@@ -60,8 +60,8 @@ def add_all_videos_to_playlist(youtube, video_mapping, playlist_name="Lernvideos
             print(f"➕ Hinzugefügt: {eintrag['theme']} ({video_id})")
         else:
             print(f"⚠️ Ungültige URL: {eintrag.get('url', '')}")
-
-client = genai.Client(api_key="AIzaSyDN4gS1nfrz-Nup22aow0WsB7kamkrdj6A")
+#enter own API key
+client = genai.Client(api_key="APIKEY")
 
 def read_all_pdfs_from_folder(folder_path):
     contents = ""
